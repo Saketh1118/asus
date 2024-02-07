@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# GitHub repository information
+USERNAME="your_username"
+REPO_NAME="your_repository_name"
+ACCESS_TOKEN="your_access_token"
+
+# Clone a repository
+git clone https://github.com/${USERNAME}/${REPO_NAME}.git
+
+# Navigate into the repository directory
+cd ${REPO_NAME}
+
+# Create a new file
+echo "Hello, GitHub!" > new_file.txt
+
+# Add the new file to the staging area
+git add new_file.txt
+
+# Commit changes
+git commit -m "Add new_file.txt"
+
+# Push changes to the remote repository
+git push origin main
+
